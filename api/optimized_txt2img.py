@@ -31,7 +31,7 @@ def load_model_from_config(ckpt, verbose=False):
 
 
 config = r"optimizedSD\v1-inference.yaml"
-ckpt = r"model_dog.ckpt"
+ckpt = r"model_trained.ckpt"
 device = "cuda"
 
 parser = argparse.ArgumentParser()
