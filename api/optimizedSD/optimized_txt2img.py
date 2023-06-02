@@ -31,7 +31,7 @@ def load_model_from_config(ckpt, verbose=False):
 
 
 config = r"optimizedSD\v1-inference.yaml"
-ckpt = r"model.ckpt"
+ckpt = r"model_trained.ckpt"
 device = "cuda"
 
 parser = argparse.ArgumentParser()
@@ -266,7 +266,7 @@ with torch.no_grad():
                 # for x_sample in x_samples_ddim:
                     x_sample = 255. * rearrange(x_sample[0].cpu().numpy(), 'c h w -> h w c')
                     Image.fromarray(x_sample.astype(np.uint8)).save(
-                        os.path.join(sample_path, f"{base_count:05}.png"))
+                        os.path.join(sample_path, f"0.png"))
                     base_count += 1
 
 

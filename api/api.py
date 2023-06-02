@@ -20,7 +20,7 @@ app.add_middleware(
 
 @app.get("/")
 def generate_image(prompt: str):
-    subprocess.call(["python", "optimized_txt2img.py", "--prompt", prompt])
+    subprocess.call(["python", "optimizedSD/optimized_txt2img.py", "--prompt", prompt])
     image = Image.open(os.getcwd() + "/outputs/txt2img-samples/" + prompt.replace(" ", "_") + "/0.png")
     buffer = BytesIO()
     image.save(buffer, format="PNG")
