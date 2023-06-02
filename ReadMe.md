@@ -50,9 +50,9 @@ Navigate to the `client` folder and install its dependencies:
 
 In the next two images, I show screen shots of the application generating an image based on an input text. The second image tries to generate a picture of myself since in the training section, I trained the model with some pictures of myself. 
 
-<img src="https://drive.google.com/uc?export=view&id=1JNg5J-ScoCl-2BBCretX2HD_9MeadyJX" width="800" height="700">
+<img src="https://drive.google.com/uc?export=view&id=1JNg5J-ScoCl-2BBCretX2HD_9MeadyJX" width="675" height="911">
 
-<img src="https://drive.google.com/uc?export=view&id=1tihMG4xc1nai5UloUcRWEvxh3p9hr0YR" width="800" height="700">
+<img src="https://drive.google.com/uc?export=view&id=1tihMG4xc1nai5UloUcRWEvxh3p9hr0YR" width="675" height="911">
 
 ### Training 
 
