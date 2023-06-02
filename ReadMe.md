@@ -56,5 +56,6 @@ In the next two images, I show screen shots of the application generating an ima
 
 ### Training 
 
--   Run [`Copy_of_DreamBooth_Stable_Diffusion.ipynb`][https://colab.research.google.com/drive/15RoZt_6Mo0NFB1QWQ5yLu-dev-axj8eY#scrollTo=K6xoHWSsbcS3].
-[![Open In Colab][colab-badge]][https://colab.research.google.com/drive/15RoZt_6Mo0NFB1QWQ5yLu-dev-axj8eY#scrollTo=K6xoHWSsbcS3]
+To train the model, I used the Dreambooth technique to fine-tune diffusion models by injecting a custom subject to the model. This is a methodology published by Google in 2022. To train the model, the Dreambooth methodology needs a minimum usage of 9.92GB of VRAM. As indicated before, I have a NVIDIA GeForce RTX 2060 GPU which has 6GB of VRAM. This is why, I had to train the model using google colab. To train the model in colab, I used a Tesla T4 GPU. The original repositroy for Dreambooth training can be found [here](https://github.com/ShivamShrirao/diffusers/tree/main/examples/dreambooth). The steps to run the training, requirements and sample input/output after training are clearly shown in the notebook. The trained model was uploaded to my drive and can be downloaded from [here](https://drive.google.com/file/d/1Tw_G7rTGw3I8aRwX-v0V-cqfwmzlee84/view?usp=sharing).
+
+- Run [colab notebook](https://colab.research.google.com/drive/15RoZt_6Mo0NFB1QWQ5yLu-dev-axj8eY#scrollTo=K6xoHWSsbcS3) [![][colab]][colab-cin]
