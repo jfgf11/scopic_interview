@@ -1,6 +1,6 @@
 # Scopic Interview
 
-This repository is made up of three folders(application); the front-end app (client), the backend app (api) and the training folder.
+This repository is made up of three folders(application); the front-end app (client), the backend app (api). The training process was done using google colab. A link to the notebook used for training the model was provided at the end of this file.
 
 ## Tools used
 
