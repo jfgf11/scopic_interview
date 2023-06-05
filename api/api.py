@@ -20,6 +20,12 @@ app.add_middleware(
 
 @app.get("/")
 def generate_image(prompt: str):
+    """
+    This function generates an image based on the stable diffusion model.
+    
+    :param prompt: the text that describes the image you want to generate
+    :return: the response with the image generated
+    """ 
     subprocess.call(["python", "optimizedSD/optimized_txt2img.py", "--prompt", prompt])
     image = Image.open(os.getcwd() + "/outputs/txt2img-samples/" + prompt.replace(" ", "_") + "/0.png")
     buffer = BytesIO()
