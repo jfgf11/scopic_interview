@@ -29,6 +29,13 @@ Then, you can run the backend with:
     
     conda activate ldm
     uvicorn api:app --reload
+    
+### Test Server
+
+Test the server with:
+    
+    conda activate ldm
+    pytest test_main.py
 
 #### Modifications made to orignal Stable Diffusion
 
