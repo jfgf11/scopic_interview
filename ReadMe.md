@@ -26,7 +26,8 @@ Navigate to the `api` subdirectory and follow the instructions specified in the 
 #### Start Server
 
 Then, you can run the backend with:
-
+    
+    conda activate ldm
     uvicorn api:app --reload
 
 #### Modifications made to orignal Stable Diffusion
@@ -50,11 +51,12 @@ Navigate to the `client` folder and install its dependencies:
 
 In the next two images, I show screen shots of the application generating an image based on an input text. The second image tries to generate a picture of myself since in the training section, I trained the model with some pictures of myself. 
 
-<img src="https://drive.google.com/file/d/1JNg5J-ScoCl-2BBCretX2HD_9MeadyJX/view?usp=sharing" width="800" height="700">
+<img src="https://drive.google.com/uc?export=view&id=1JNg5J-ScoCl-2BBCretX2HD_9MeadyJX" width="675" height="911">
 
-<img src="https://drive.google.com/file/d/1tihMG4xc1nai5UloUcRWEvxh3p9hr0YR/view?usp=sharing" width="800" height="700">
+<img src="https://drive.google.com/uc?export=view&id=1tihMG4xc1nai5UloUcRWEvxh3p9hr0YR" width="675" height="911">
 
 ### Training 
 
--   Run [`Copy_of_DreamBooth_Stable_Diffusion.ipynb`][https://colab.research.google.com/drive/15RoZt_6Mo0NFB1QWQ5yLu-dev-axj8eY#scrollTo=K6xoHWSsbcS3].
-[![Open In Colab][colab-badge]][https://colab.research.google.com/drive/15RoZt_6Mo0NFB1QWQ5yLu-dev-axj8eY#scrollTo=K6xoHWSsbcS3]
+To train the model, I used the Dreambooth technique to fine-tune diffusion models by injecting a custom subject to the model. This is a methodology published by Google in 2022. To train the model, the Dreambooth methodology needs a minimum usage of 9.92GB of VRAM. As indicated before, I have a NVIDIA GeForce RTX 2060 GPU which has 6GB of VRAM. This is why, I had to train the model using google colab. To train the model in colab, I used a Tesla T4 GPU. The original repositroy for Dreambooth training can be found [here](https://github.com/ShivamShrirao/diffusers/tree/main/examples/dreambooth). The steps to run the training, requirements and sample input/output after training are clearly shown in the notebook. The trained model was uploaded to my drive and can be downloaded from [here](https://drive.google.com/file/d/1Tw_G7rTGw3I8aRwX-v0V-cqfwmzlee84/view?usp=sharing). To train the model , transfer learning was applied to [stable-diffusion-v1-5](https://huggingface.co/runwayml/stable-diffusion-v1-5) to train the model with images of myself. The Stable Diffusion model has 890 million parameters.
+
+- Run [colab notebook](https://colab.research.google.com/drive/15RoZt_6Mo0NFB1QWQ5yLu-dev-axj8eY#scrollTo=K6xoHWSsbcS3)
