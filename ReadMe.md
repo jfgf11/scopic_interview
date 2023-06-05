@@ -21,7 +21,7 @@ To setup the application please clone this repository.
 ### Backend
 
 #### Requirements
-Navigate to the `api` subdirectory and follow the instructions specified in the section "Requirements" of its `README.md` file to setup the requirements for stable diffusion. Then, put your downloaded model with the name `model_trained.ckpt` file into the `api` folder.
+Navigate to the `api` subdirectory and follow the instructions specified in the section "Requirements" of its `README.md` file to setup the requirements for stable diffusion. Then, put your downloaded model with the name `model_trained.ckpt` file into the `api` folder. You can download the model trained by clicking [here](https://drive.google.com/file/d/1Tw_G7rTGw3I8aRwX-v0V-cqfwmzlee84/view?usp=sharing).
 
 #### Start Server
 
@@ -39,7 +39,7 @@ Test the server with:
 
 #### Modifications made to orignal Stable Diffusion
 
-Since I have a NVIDIA GeForce RTX 2060 GPU, I needed a modified version of Stable Diffusion repo, optimized to use less VRAM than the original by sacrificing inference speed. To do this, I added the [optimized SD](https://github.com/basujindal/stable-diffusion/tree/main/optimizedSD) folder to the `api` folder, changed the format in which images could be saved and the name searched for uploading the model to `model_trained.ckpt`. I also added an `api` file in which the whole backend of the application is done. The `environment.yaml` file was also modified to include the installation of FastAPI
+Since I have a NVIDIA GeForce RTX 2060 GPU, I needed a modified version of Stable Diffusion repo, optimized to use less VRAM than the original by sacrificing inference speed. To do this, I added the [optimized SD](https://github.com/basujindal/stable-diffusion/tree/main/optimizedSD) folder to the `api` folder, changed the format in which images could be saved and the name searched for uploading the model to `model_trained.ckpt`. I also added an `api` file in which the whole backend of the application is done. The `environment.yaml` file was also modified to include the installation of FastAPI.
 
 ### FrontEnd
 
