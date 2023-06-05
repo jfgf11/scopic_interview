@@ -1,4 +1,6 @@
 *.ckpt
 *.png
+*.pyc
+*.pyo
 stable
 __pycache__
