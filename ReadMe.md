@@ -21,7 +21,11 @@ To setup the application please clone this repository.
 ### Backend
 
 #### Requirements
-Navigate to the `api` subdirectory and follow the instructions specified in the section "Requirements" of its `README.md` file to setup the requirements for stable diffusion. Then, put your downloaded model with the name `model_trained.ckpt` file into the `api` folder. You can download the model trained by clicking [here](https://drive.google.com/file/d/1Tw_G7rTGw3I8aRwX-v0V-cqfwmzlee84/view?usp=sharing).
+Execute the command:
+
+    set PIP_EXISTS_ACTION=w
+    
+Then, navigate to the `api` subdirectory and follow the instructions specified in the section "Requirements" of its `README.md` file to setup the requirements for stable diffusion. Then, put your downloaded model with the name `model_trained.ckpt` file into the `api` folder. You can download the model trained by clicking [here](https://drive.google.com/file/d/1Tw_G7rTGw3I8aRwX-v0V-cqfwmzlee84/view?usp=sharing).
 
 #### Start Server
 
